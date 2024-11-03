@@ -1,4 +1,4 @@
-#!/home/roaacan/cs50p/bin/python3
+#!/home/roaacan/cs50p/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
