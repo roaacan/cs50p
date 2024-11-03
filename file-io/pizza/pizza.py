@@ -1,5 +1,6 @@
 import sys
 import csv
+from tabulate import tabulate
 
 
 def main():
@@ -17,12 +18,13 @@ def main():
     except FileNotFoundError:
         sys.exit("File does not exit")
 
-    create_table(csv_file)
+    create_grid_table(csv_file)
     csv_file.close()
 
 
-def create_table(csv_file):
-    ...
+def create_grid_table(csv_file):
+    reader = csv.reader(csv_file)
+    print(tabulate(reader, headers="firstrow", tablefmt="grid"))
 
 
 if __name__ == "__main__":
