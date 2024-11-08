@@ -1,0 +1,4 @@
+\cs50p
+__pycache__/
+*.pyc
+*.pyo
