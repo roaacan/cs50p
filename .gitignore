@@ -2,3 +2,7 @@
 __pycache__/
 *.pyc
 *.pyo
+\bin
+\lib
+\pyvenv.cfg
+\lib64
